@@ -195,7 +195,6 @@ end
 
 def player_stats(player_name)
   new_hash = {}
-  binding.pry
   i = 0 
   while i < game_hash[:home][:players].length
     if player_name == game_hash[:home][:players][i][:player_name]
