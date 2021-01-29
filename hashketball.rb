@@ -211,7 +211,7 @@ def player_stats(player_name)
     end
     i += 1
   end
-  
+  return new_hash
 end
 
 
