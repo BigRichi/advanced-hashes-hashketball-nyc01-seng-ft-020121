@@ -190,6 +190,7 @@ def player_numbers(team_name)
       i += 1
     end
   end
+  return new_arr
 end
 
 
