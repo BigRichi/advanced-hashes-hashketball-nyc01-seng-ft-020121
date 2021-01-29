@@ -193,7 +193,10 @@ def player_numbers(team_name)
   return new_arr
 end
 
-def
+def player_stats(player_name)
+  new_hash = {}
+  
+end
 
 
 
