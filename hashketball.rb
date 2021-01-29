@@ -181,9 +181,14 @@ def player_numbers(team_name)
   if team_name == game_hash[:home][:team_name]
     while i < game_hash[:home][:players].length do 
       new_arr << game_hash[:home][:players][i][:number]
+      i += 1
     end
   end
   if team_name == game_hash[:away][:team_name]
+    while i < game_hash[:away][:players].length do 
+      new_arr << game_hash[:away][:players][i][:number]
+      i += 1
+    end
   end
 end
 
