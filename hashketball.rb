@@ -204,6 +204,14 @@ def player_stats(player_name)
     i += 1
   end
   
+  i = 0 
+  while i < game_hash[:away][:players].length
+    if player_name == game_hash[:away][:players][i][:player_name]
+      new_hash = {game_hash[:away][:players][i]}
+    end
+    i += 1
+  end
+  
 end
 
 
