@@ -195,14 +195,14 @@ end
 
 def player_stats(player_name)
   binding.pry
-  # new_hash = {}
-  # i = 0 
-  # while i < game_hash[:home][:players].length
-  #   if player_name == game_hash[:home][:players][i][:player_name]
-  #     new_hash = {game_hash[:home][:players][i]
-  #   end
-  #   i += 1
-  # end
+  new_hash = {}
+  i = 0 
+  while i < game_hash[:home][:players].length
+    if player_name == game_hash[:home][:players][i][:player_name]
+      new_hash = {game_hash[:home][:players][i]
+    end
+    i += 1
+  end
   
 end
 
