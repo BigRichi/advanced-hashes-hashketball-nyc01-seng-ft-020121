@@ -131,21 +131,44 @@ end
 
 def num_points_scored(player_name)
   i = 0 
-  while i < 
-  if player_name == game_hash[:home][:players][i][:player_name]
-    return game_hash[:home][:players][i][:points]
-  elsif player_name == game_hash[:away][:players][i][:player_name]
-    return game_hash[:away][:players][i][:points]
-    
+  while i < game_hash[:home][:players].length
+    if player_name == game_hash[:home][:players][i][:player_name]
+      return game_hash[:home][:players][i][:points]
+    end
+    i += 1
+  end
+  i = 0
+  while i < game_hash[:away][:players].length
+    if player_name == game_hash[:away][:players][i][:player_name]
+      return game_hash[:away][:players][i][:points]
+    end
+    i += 1 
   end
 end
   
 def shoe_size(player_name)
-  
+  i = 0 
+  while i < game_hash[:home][:players].length
+    if player_name == game_hash[:home][:players][i][:player_name]
+      return game_hash[:home][:players][i][:shoe]
+    end
+    i += 1
+  end
+  i = 0
+  while i < game_hash[:away][:players].length
+    if player_name == game_hash[:away][:players][i][:player_name]
+      return game_hash[:away][:players][i][:shoe]
+    end
+    i += 1 
+  end
 end
 
 def team_colors(team_name)
-  
+  if team_name == game_hash[:home][:team_name]
+    return game_hash[:home][:colors]
+  elsif team_name == game_hash[:away][:team_name]
+    return game_hash[:away][:colors]
+  end
 end
 
 def team_names
@@ -153,7 +176,13 @@ def team_names
 end
 
 def player_numbers(team_name)
+  new_arr = []
   
+  if team_name == game_hash[:home][:team_name]
+    return game_hash[:home][:colors]
+  elsif team_name == game_hash[:away][:team_name]
+    return game_hash[:away][:colors]
+  end
 end
 
 
