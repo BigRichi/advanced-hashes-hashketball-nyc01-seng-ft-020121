@@ -213,7 +213,28 @@ def player_stats(player_name)
   end
 end
 
-def 
+def big_shoe_rebounds
+  shoe_size = 0 
+  most_rebounds = 0 
+  i = 0 
+  while i < game_hash[:home][:players].length
+    if game_hash[:home][:players][i][:shoe] > shoe_size
+      shoe_size = game_hash[:home][:players][i][:shoe]
+      most_rebounds = game_hash[:home][:players][i][:rebounds]
+    end
+    i += 1 
+  end
+  
+  i = 0 
+  while i < game_hash[:away][:players].length
+    if game_hash[:away][:players][i][:shoe] > shoe_size
+      shoe_size = game_hash[:away][:players][i][:shoe]
+      most_rebounds = game_hash[:away][:players][i][:rebounds]
+    end
+    i += 1 
+  end
+  return most_rebounds
+end
 
 
 
