@@ -129,24 +129,36 @@ def game_hash
 end
 
 
-def   
+def num_points_scored(player_name)
   
+end
   
+def shoe_size(player_name)
   
+end
+
+def team_colors(team_name)
   
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
+end
+
+def team_names
+  return [game_hash[:home][:team_name], game_hash[:away][:team_name]]
+end
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 # Write code here
