@@ -199,7 +199,7 @@ def player_stats(player_name)
   i = 0 
   while i < game_hash[:home][:players].length
     if player_name == game_hash[:home][:players][i][:player_name]
-      new_hash = {game_hash[:home][:players][i]
+      new_hash = {game_hash[:home][:players][i]}
     end
     i += 1
   end
