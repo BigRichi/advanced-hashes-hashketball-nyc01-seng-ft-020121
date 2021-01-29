@@ -130,7 +130,14 @@ end
 
 
 def num_points_scored(player_name)
-  
+  i = 0 
+  while i < 
+  if player_name == game_hash[:home][:players][i][:player_name]
+    return game_hash[:home][:players][i][:points]
+  elsif player_name == game_hash[:away][:players][i][:player_name]
+    return game_hash[:away][:players][i][:points]
+    
+  end
 end
   
 def shoe_size(player_name)
@@ -143,6 +150,10 @@ end
 
 def team_names
   return [game_hash[:home][:team_name], game_hash[:away][:team_name]]
+end
+
+def player_numbers(team_name)
+  
 end
 
 
