@@ -194,7 +194,7 @@ def player_numbers(team_name)
 end
 
 def player_stats(player_name)
-  binding.pry
+  # binding.pry
   new_hash = {}
   i = 0 
   while i < game_hash[:home][:players].length
